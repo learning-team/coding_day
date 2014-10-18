@@ -1,0 +1,3 @@
+# Example File - shoule be pretty straight forward.
+
+I want to learn about javascript and programming in general.
