@@ -16,13 +16,17 @@ public class ExampleRunner {
     /**
      * constructor that takes a string
      */
-    public ExampleRunner(String parameter) {
-        instanceString = parameter;
+    public ExampleRunner(String instanceString) {
+        instanceString = instanceString;
+        this.instanceString = instanceString;
+        ExampleOne.classPrint(this.getClass().toString());
     }
 
     public void run() {
         print(STATIC_STRING);
+        print(this.STATIC_STRING);
         print(instanceString);
+        print(this.instanceString);
     }
 
     private void print(String s) {
