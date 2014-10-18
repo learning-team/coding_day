@@ -1,0 +1,5 @@
+Ordered from highest to lowest priority.
+
+-Names of the different pieces of java. Methods, Enums, ETC.
+-Getting comfortable with scanners, readers, http urls.
+-Learn JSwing.
