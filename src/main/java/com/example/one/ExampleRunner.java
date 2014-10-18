@@ -17,16 +17,16 @@ public class ExampleRunner {
      * constructor that takes a string
      */
     public ExampleRunner(String instanceString) {
-        instanceString = instanceString;
-        this.instanceString = instanceString;
+        instanceString = instanceString;                    // this doesn't do anything
+        this.instanceString = instanceString;               // this is good!
         ExampleOne.classPrint(this.getClass().toString());
     }
 
     public void run() {
-        print(STATIC_STRING);
-        print(this.STATIC_STRING);
-        print(instanceString);
-        print(this.instanceString);
+        print(STATIC_STRING);       // this is fine
+        print(this.STATIC_STRING);  // this doesn't make sense, STATIC_STRING is a static variable and should not be referenceded with 'this.'
+        print(instanceString);      // this is fine
+        print(this.instanceString); // this is a little redundant, but also fine
     }
 
     private void print(String s) {

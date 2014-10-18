@@ -16,7 +16,7 @@ public class BadExample {
     public void run() {
         print(STATIC_STRING);
         print(instanceString);
-        STATIC_STRING = instanceString;
+        STATIC_STRING = instanceString;  // be wary of updating static methods, you could change something that another instance is counting on
         print(STATIC_STRING);
     }
 
